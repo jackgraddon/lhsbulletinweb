@@ -1,0 +1,22 @@
+/*Helpful in animations*/
+.invis{opacity: 0}
+.smooth{transition: 0.3s;}
+
+/*Animations*/
+.bouncing {animation: bouncing 1s infinite ease-in-out;}
+@keyframes bouncing {
+    0%, 100%
+    {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+.fadeOut {animation: fadeOut 0.3s;}
+@keyframes fadeOut {
+    from    {opacity: 1}
+    to      {opacity: 0}
+}
+.fadeIn {animation: fadeIn 0.3s;}
+@keyframes fadeIn {
+    from    {opacity: 0}
+    to      {opacity: 1}
+}

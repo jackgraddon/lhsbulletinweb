@@ -1,0 +1,64 @@
+@import "animationControllers.css";
+
+body {
+    cursor: default;
+    /*disables text selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*hides scrollbar on Microsoft Broswers*/
+    -ms-overflow-style: none;
+}
+
+/*Hides scrollbars on webKit browsers*/
+body::-webkit-scrollbar {
+    display: none
+}
+
+#banner {
+    position: relative;
+}
+
+#background {
+    background-image: url(../images/palms.jpeg);
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: 110%;
+    background-color: #17181a;
+}
+
+a {
+    text-decoration: none !important;
+    transition: 0.2s !important;
+}
+
+.list-group-item {
+    transition: 0.1s;
+    text-decoration: none;
+    color: black;
+}
+
+.list-group-item:hover {
+    background-color: #343a40;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.hover {
+    transition: 0.2s;
+}
+
+.hover:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+.text-sm {
+    font-size: 10pt;
+    color: rgba(255, 255, 255, 0.5);
+}
